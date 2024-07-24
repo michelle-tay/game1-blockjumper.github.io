@@ -32,8 +32,8 @@ colorPicker.addEventListener('input', function() {
 });
 
 function startGame() {
-    document.addEventListener('keydown', function(event) {
-        if (event.code === 'Space' && !character.classList.contains('animate')) {
+    function jump() {
+        if (!character.classList.contains('animate')) {
             character.classList.add('animate');
 
             // Remove the animation class after the animation ends
@@ -41,7 +41,21 @@ function startGame() {
                 character.classList.remove('animate');
             }, { once: true });
         }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.code === 'Space') {
+            jump();
+        }
     });
+
+    document.addEventListener('click', function() {
+        jump();
+    });
+}
+
+// Ensure the game starts
+startGame();
 
     var checklose = setInterval(function() {
         var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
@@ -72,7 +86,7 @@ function startGame() {
             }, 10); // Small delay to ensure the block reset correctly
         }
     }, 10);
-}
+
 
 function resetGame() {
     // Reset score
