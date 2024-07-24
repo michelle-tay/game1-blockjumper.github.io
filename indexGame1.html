@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlockJumper</title>
+    <link rel="icon" href="resources/gameemoji.png">
+    <link rel="stylesheet" href="css/styleGame1.css">
+    <script defer type="text/javascript" src="appscripts/scriptGame1.js"></script>
+
+</head>
+
+<div id="instruction">
+    <h1>How to play:</h1>
+    <br> 
+    <p>Press space bar to jump over the moving block. <br>The block will move faster every 5 points you score<br><br></p>
+    <label for="character-color">Choose Your Character Color:</label>
+    <input type="color" id="character-color" name="character-color" value="#ffffff">
+    <p>Click 'Start Game' to begin</p>
+<br>
+        <div id="audioid">
+            <audio id="myAudio" src="resources/Game1music.mp3" preload="auto" hidden></audio> 
+            <button id="musicButton" class="showsong" onClick="togglePlay()" title="Song Title: Nocturnal"> 🔊<b>Play/Pause Game Music</b>🎵</button></div>
+        </div>
+</div>
+
+
+<body>
+    
+    <div id="game-container">
+        <button id="start-button">Start Game</button>
+        <div id="game1" class="hidden">
+            <div id="character"></div>
+            <div id="block"></div>
+            <div id="counter">Score: 0</div>
+        </div>
+    </div>
+
+
+    <div id="credits">
+        <h1>Credits</h1><br>
+        <p>Game developed by Tay Ching Ting Michelle</p>
+        <P>Music by composed by Michelle and Abdul Hakiim Bin Muhamad Hamim</P>
+        <p>Original Game Tutorial by <a href="https://www.youtube.com/@KnifeCircus" target="_blank">@KnifeCircus</a> on YouTube</p>
+        <P>Background Image <a href="https://edermunizz.itch.io/free-pixel-art-forest" target="_blank">Source</a></P>
+        <br>
+        <h2>Last updated on 24 July 2024</h2>
+    </div>
+
+
+    
+</body>
+
+</html>
