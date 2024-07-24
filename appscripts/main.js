@@ -52,6 +52,10 @@ function startGame() {
     document.addEventListener('click', function() {
         jump();
     });
+
+    document.addEventListener('touchstart', function() {
+        jump();
+    });
 }
 
 // Ensure the game starts
