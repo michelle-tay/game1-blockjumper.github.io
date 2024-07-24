@@ -113,24 +113,22 @@ body{
 
 /*MUSIC PLAYER*/
 #musicButton{
-    position: relative;
-    bottom: 2.0%;
-    right: 1.0%;
-    background-repeat: no-repeat;
-    background-size: cover; 
+    position: absolute;
+    top: 2.0%;
+    left: 1.0%;
     border: none;
-    padding: 20px;
+    padding: 2px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 13px;
+    font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     text-align: center;
     text-decoration: none;
     outline: none;
-    box-shadow: 0 9px #361601;
+    box-shadow: 0 7px #361601;
     border: 1px;
     background-color: #079c7c;
     color: #ffffff;
