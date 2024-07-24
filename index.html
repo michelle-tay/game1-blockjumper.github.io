@@ -17,21 +17,23 @@
     <input type="color" id="character-color" name="character-color" value="#ffffff">
     <p><br>Click 'Start Game' to begin. <br> Enjoy some music by playing the music button below.</p>
 <br>
-        <div id="audioid">
-            <audio id="myAudio" src="resources/Game1music.mp3" preload="auto" hidden></audio> 
-            <button id="musicButton" class="showsong" onClick="togglePlay()" title="Song Title: Nocturnal"> 🔊<b>Play/Pause Game Music</b>🎵</button></div>
-        </div>
+
 </div>
 
 
 <body>
     
     <div id="game-container">
+        
         <button id="start-button">Start Game</button>
         <div id="game1" class="hidden">
             <div id="character"></div>
             <div id="block"></div>
             <div id="counter">Score: 0</div>
+        </div>
+        <div id="audioid">
+            <audio id="myAudio" src="resources/Game1music.mp3" preload="auto" hidden></audio> 
+            <button id="musicButton" class="showsong" onClick="togglePlay()" title="Song Title: Nocturnal"> 🔊<b>Play/Pause Music</b>🎵</button></div>
         </div>
     </div>
 
